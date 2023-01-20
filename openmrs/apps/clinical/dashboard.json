@@ -51,17 +51,6 @@
                     "labEntry"
                 ]
             },
-	          "tuberculosis": {
-                "title": "Tuberculosis Follow Up",
-                "type": "tuberculosis",
-                "isObservation": true,
-                "dashboardConfig": {
-                    "conceptNames": [
-                        "Tuberculosis Followup Template"
-                    ],
-                    "numberOfVisits": 2
-                }
-            },
             "disposition":{  
                 "translationKey":"DASHBOARD_TITLE_DISPOSITION_KEY",
                 "showDetailsButton":true,
@@ -113,16 +102,6 @@
                     "conceptNames":[  
                         "Summary"
                     ],
-                    "numberOfVisits":4
-                }
-            },
-            "pacs":{  
-                "orderType":"Radiology Order",
-                "type":"pacsOrders",
-                "translationKey":"DASHBOARD_TITLE_PACS_KEY",
-                "displayOrder":8,
-                "dashboardConfig":{  
-                    "pacsImageUrl":"/oviyam2/oviyam?patientID={{patientID}}&accessionNumber={{orderNumber}}",
                     "numberOfVisits":4
                 }
             },
