@@ -50,17 +50,7 @@
                     "numberOfVisits":1
                 }
             },
-			"diagnoses":{
-                "type": "diagnosis",
-                "displayOrder": 4,
-                "config": {
-                    "translationKey" : "DISCHARGE_SUMMARY_DIAGNOSIS_KEY",
-                    "showCertainty": true,
-                    "hideVisitDate": true,
-                    "showOrder": false,
-                    "showDetailsButton": true
-                }
-            },
+			
             "labOrders": {
                 "type": "labOrders",
                 "displayOrder": 4,
