@@ -60,6 +60,7 @@
   "PATIENT_ATTRIBUTE_URBAN":"الحضاري",
   "PATIENT_ATTRIBUTE_CLUSTER":"تَجَمَّع",
   "PATIENT_ATTRIBUTE_RATION_CARD_TYPE":"نوع البطاقة التموينية",
-  "PATIENT_ATTRIBUTE_FAMILY_INCOME_PER_MONTH_IN_RS":"دخل الأسرة (شهريًا بالروبية)"
+  "PATIENT_ATTRIBUTE_FAMILY_INCOME_PER_MONTH_IN_RS":"دخل الأسرة (شهريًا بالروبية)",
+  "CLINICAL_YEARS_TRANSLATION_KEY": "سنوات"
        
 }
