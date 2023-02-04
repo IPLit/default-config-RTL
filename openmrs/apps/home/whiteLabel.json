@@ -1,6 +1,6 @@
 {
 	"homePage": {
-		"header_text": "<b>WELCOME TO<br />BAHMNI EMR & HOSPITAL SERVICE",
+		"header_text": " أهلا بك في نظام باهمني للسجل الطبي الالكتروني وخدمات المستشفيات",
 		"logo": "/bahmni/images/bahmniLogoFull.png",
 		"title_text": " "
 	},
@@ -16,21 +16,21 @@
 		{
 			"enabled": true,
 			"name": "clinicalService",
-			"title": "Clinical Service",
+			"title": "الخدمات السريرية",
 			"logo": "/bahmni/images/app.png",
 			"link": "/bahmni/home"
 		},
 		{
 			"enabled": true,
 			"name": "openelis",
-			"title": "Laboratory",
+			"title": "المخبر",
 			"logo": "/bahmni/images/lab.png",
 			"link": "/openelis"
 		},
 		{
 			"enabled": true,
 			"name": "odoo",
-			"title": "Stock Inventory & Billing",
+			"title": "المستودع والمحاسبة ",
 			"logo": "/bahmni/images/bills.png",
 			"linkPrefix": "erp"
 		},
@@ -51,7 +51,7 @@
 		{
 			"enabled": true,
 			"name": "dcm",
-			"title": "Radiology",
+			"title": "الأشعة",
 			"logo": "/bahmni/images/pac.png",
 			"link": "/dcm4chee-web3"
 		}
