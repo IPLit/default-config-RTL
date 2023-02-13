@@ -1,4 +1,6 @@
 {
+    "PATIENT_LISTING_QUEUES_HEADER_NAME":  "الاسم",
+    "PATIENT_LISTING_QUEUES_HEADER_IDENTIFIER": "الرقم التعريفي",
     "PATIENT_LISTING_QUEUE_SCHEDULED_LABEL_KEY": "عرض قائمة المواعيد للمريض",
     "PATIENT_ATTRIBUTE_PATIENT_NAME": "اسم المريض",
     "PATIENT_ATTRIBUTE_IDENTIFIER": "رقم المعرف للمريض",
@@ -122,7 +124,11 @@
     "ACTUAL_TIME_ADDED_TO_KEY":"الزمن الفعلي المضاف إلى",
     "OT_SURGICAL_BLOCK_ACROSS_MULTIPLE_DAYS_CONFIRMATION_MESSAGE": "هل أنت متأكد أنك تريد إنشاء كتلة جراحية تمتد لأيام؟",
     "MOVING_KEY": "نقل",
-    "FROM_KEY": "من"
+    "FROM_KEY": "من",
+    "Primary provider":"المزود الأساسي",
+    "Location":"موقع",
+    "Date of Surgery":"تاريخ الجراحة",
+    "extraIdentifier":"معرف إضافي"
     
 
 }
