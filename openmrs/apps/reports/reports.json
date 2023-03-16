@@ -1,46 +1,23 @@
 {
-    "visitReport10": {
+    "VisitReport": {
         "name": "Visit Report",
-        "type": "visits",
+        "type": "MRSGeneric",
         "requiredPrivilege": "app:reports",
         "config": {
-            "forDataAnalysis": true,
-            "patientAttributes": [
-                "caste",
-                "class",
-                "education",
-                "occupation",
-                "primaryContact"
-            ],
-            "visitAttributes": [
-                "Visit Status",
-                "Admission Status"
-            ],
-            "patientAddresses": [
-                "address3",
-                "city_village"
-            ],
-            "applyDateRangeFor": "visitStopDate",
-            "visitTypesToFilter": [
-                "PHARMACY VISIT",
-                "OPD"
-            ]
-        }
+         "sqlPath": "/etc/bahmni_config/openmrs/apps/reports/sql/ClinicVisit.sql"                  
+       }
     },
+
     "testReport": {
         "name": "Test Observation Report",
         "type": "observations",
         "requiredPrivilege": "app:reports",
         "config": {
             "patientAttributes": [
-                "caste",
-                "class",
-                "education",
-                "occupation",
-                "primaryContact"
+                
             ],
             "patientAddresses": [
-                "address3",
+                "address1",
                 "city_village"
             ],
             "visitAttributes": [
@@ -169,7 +146,7 @@
         "type": "ElisGeneric",
         "requiredPrivilege": "app:reports",
         "config": {
-            "sqlPath": "/var/www/bahmni_config/openmrs/apps/reports/sql/testCount.sql"
+            "sqlPath": "/etc/bahmni_config/openmrs/apps/reports/sql/testCount.sql"
         }
     },
     "bloodPressure": {
@@ -329,8 +306,7 @@
                 "city_village"
             ],
             "patientAttributes": [
-                "caste",
-                "education"
+                
             ],
             "conceptNames": [
                 "Height",
@@ -388,23 +364,6 @@
             ]
         }
     },
-    "visitReport": {
-        "name": "Visit Report",
-        "type": "visitReport",
-        "requiredPrivilege": "app:reports",
-        "config": {
-            "personAttributes": [
-                "caste",
-                "class",
-                "education",
-                "occupation",
-                "primaryContact"
-            ],
-            "visitAttributes": [
-                "Visit Status"
-            ]
-        }
-    },
     "patientReport": {
         "name": "Patient Information",
         "type": "PatientReport",
@@ -416,12 +375,11 @@
         "requiredPrivilege": "app:reports",
         "config": {
             "patientAttributes": [
-                "caste",
-                "education"
+                
             ],
             "applyDateRangeFor": "ObsRecording",
             "addressAttributes": [
-                "postal_code",
+                
                 "city_village"
             ],
             "conceptNames": [
@@ -449,48 +407,17 @@
         "requiredPrivilege": "app:reports",
         "config": {
             "patientAttributes": [
-                "education",
-                "primaryContact",
-                "secondaryContact",
-                "class",
-                "cluster"
+                
             ],
             "patientAddresses": [
                 "city_village",
-                "address3"
+                "address1"
             ],
             "programAttributes": [],
             "forDataAnalysis": true,
             "showAllStates": true,
             "programNamesToFilter": [
                 "HIV Program"
-            ]
-        }
-    },
-    "pivotReport": {
-        "name": "Blood Pressure",
-        "type": "aggregation",
-        "requiredPrivilege": "app:reports",
-        "config": {
-            "report":{
-                "type": "observations",
-                "config": {
-                    "conceptNamesToFilter":["Diastolic Data", "Systolic Data"],
-                    "showVisitInfo" : true,
-                    "forDataAnalysis": true,
-                    "visitAttributes": ["Visit Status", "Admission Status"],
-                    "visitTypesToFilter": ["IPD"]
-
-                }
-            },
-            "rowGroups": [
-                "Gender"
-            ],
-            "columnGroups": [
-                "Concept Name", "value"
-            ],
-            "distinctGroups": [
-                "Patient Identifier"
             ]
         }
     },
@@ -585,18 +512,14 @@
                     "config": {
                         "forDataAnalysis": true,
                         "patientAttributes": [
-                            "caste",
-                            "class",
-                            "education",
-                            "occupation",
-                            "primaryContact"
+                            
                         ],
                         "visitAttributes": [
                             "Visit Status",
                             "Admission Status"
                         ],
                         "patientAddresses": [
-                            "address3",
+                            "address1",
                             "city_village"
                         ],
                         "applyDateRangeFor": "visitStopDate",
