@@ -1,5 +1,5 @@
 SELECT DISTINCT
-  ts.name       AS DDepartment,
+  ts.name       AS department,
   t.name        AS test,
   count(r.id)   AS total_count,
   CASE WHEN t.id IN (SELECT test_id FROM test_result WHERE tst_rslt_type = 'D') THEN count(r1.id) ELSE NULL END AS positive,
