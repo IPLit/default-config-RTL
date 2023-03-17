@@ -182,6 +182,10 @@ angular.module('bahmni.common.displaycontrol.custom')
             return [date, timeSlot];
         };
         $q.all([getUpcomingAppointments(), getPastAppointments()]).then(function (response) {
+            _.map(response[0].data, function (apptItem) {
+                apptItem.DASHBOARD_APPOINTMENTS_SERVICE_KEY = Bahmni.Common.Util.stringCompressionUtil.decodeDecompress(apptItem.DASHBOARD_APPOINTMENTS_SERVICE_KEY); 
+                return apptItem;
+            });
             $scope.upcomingAppointments = response[0].data;
             $scope.upcomingAppointmentsUUIDs = [];
             $scope.teleconsultationAppointments = [];
@@ -200,6 +204,10 @@ angular.module('bahmni.common.displaycontrol.custom')
                 delete $scope.upcomingAppointments[i].tele_health_video_link;
             }
             $scope.upcomingAppointmentsHeadings = _.keys($scope.upcomingAppointments[0]);
+            _.map(response[1].data, function (apptItem) {
+                apptItem.DASHBOARD_APPOINTMENTS_SERVICE_KEY = Bahmni.Common.Util.stringCompressionUtil.decodeDecompress(apptItem.DASHBOARD_APPOINTMENTS_SERVICE_KEY); 
+                return apptItem;
+            });
             $scope.pastAppointments = response[1].data;
             $scope.pastAppointmentsHeadings = _.keys($scope.pastAppointments[0]);
         });
