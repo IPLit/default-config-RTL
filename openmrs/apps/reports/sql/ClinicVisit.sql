@@ -14,7 +14,6 @@ SELECT
   paddress.address1                                                         AS "address1",
   va.value_reference                                                        AS "Admission Status",
   paddress.city_village                                                     AS "City/Village",
-  paddress.state_province                                                   AS "State",
   va.visit_id                                                               AS "visit Id",
   CASE WHEN v.date_stopped IS NULL THEN "Active"
   ELSE "Inactive"
