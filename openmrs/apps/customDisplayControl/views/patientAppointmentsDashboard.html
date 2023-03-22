@@ -17,9 +17,9 @@
                     <th ng-repeat="heading in upcomingAppointmentsHeadings">
                         {{heading | translate}}
                     </th>
-                    <th>
+<!--                     <th>
 			            {{::"DASHBOARD_TELECON_KEY" | translate}}
-                    </th>
+                    </th> -->
                 </tr>
                 </thead>
                 <tbody>
@@ -27,11 +27,11 @@
                     <td ng-repeat="detail in appointment">
                         {{detail}}
                     </td>
-                    <td>
+<!--                     <td>
                         <button style="background: #669998; color: white;" ng-if="showJoinTeleconsultationOption($index)" ng-click="openJitsiMeet($index)">
                                  {{::"DASHBOARD_JOIN_TELECON_KEY" | translate}}
                          </button>
-                    </td>
+                    </td> -->
                 </tr>
                 </tbody>
             </table>
