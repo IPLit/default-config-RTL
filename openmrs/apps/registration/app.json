@@ -111,7 +111,7 @@
             },
             "patientSearch": {
                 "address": {
-                    "label": "الجناح الريفي",
+                    "label": "االمدينة",
                     "placeholder": "أدخل الجناح",
                     "field": "address2"
                 },
