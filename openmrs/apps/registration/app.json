@@ -112,7 +112,7 @@
             "patientSearch": {
                 "address": {
                     "label": "االمدينة",
-                    "placeholder": "أدخل الجناح",
+                    "placeholder": "أدخل المدينة",
                     "field": "city_village"
                 },
                 "customAttributes": {
