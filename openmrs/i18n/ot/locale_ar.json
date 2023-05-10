@@ -128,7 +128,6 @@
     "Primary provider":"المزود الأساسي",
     "Location":"موقع",
     "Date of Surgery":"تاريخ الجراحة",
-    "extraIdentifier":"معرف إضافي"
-    
-
+    "extraIdentifier":"معرف إضافي",
+    "CONFLICTING_TIME": "[موعد الجراحة يتعارض مع الوقت الفعلي للمواعيد الموجودة في غرفة العمليات ]"
 }
