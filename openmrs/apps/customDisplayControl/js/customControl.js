@@ -234,4 +234,74 @@ angular.module('bahmni.common.displaycontrol.custom')
         },
         template: '<ng-include src="contentUrl"/>'
     };
-}]);
+}]).directive('patientSurgeriesDashboard', ['$http', '$q', '$window','appService', function ($http, $q, $window, appService) {
+        var link = function ($scope) {
+            $scope.contentUrl = appService.configBaseUrl() + "/customDisplayControl/views/patientSurgeriesDashboard.html";
+            var getUpcomingSurgeries = function () {
+                var params = {
+                    q: "bahmni.sqlGet.upComingSurgeries",
+                    v: "full",
+                    patientUuid: $scope.patient.uuid
+                };
+                return $http.get('/openmrs/ws/rest/v1/bahmnicore/sql', {
+                    method: "GET",
+                    params: params,
+                    withCredentials: true
+                });
+            };
+            var getPastSurgeries = function () {
+                var params = {
+                    q: "bahmni.sqlGet.pastSurgeries",
+                    v: "full",
+                    patientUuid: $scope.patient.uuid
+                };
+                return $http.get('/openmrs/ws/rest/v1/bahmnicore/sql', {
+                    method: "GET",
+                    params: params,
+                    withCredentials: true
+                });
+            };
+            var convertUTCtoLocal = function (start_date_time, end_date_time) {
+                var date = Bahmni.Common.Util.DateUtil.formatDateWithoutTime(start_date_time);
+                var timeSlot = Bahmni.Common.Util.DateUtil.formatTime(start_date_time) + " - " + Bahmni.Common.Util.DateUtil.formatTime(end_date_time);
+                return [date, timeSlot];
+            };
+            $q.all([getUpcomingSurgeries(), getPastSurgeries()]).then(function (response) {
+                _.map(response[0].data, function (apptItem) {
+                    apptItem.DASHBOARD_SURGERIES_SERVICE_KEY = Bahmni.Common.Util.stringCompressionUtil.decodeDecompress(apptItem.DASHBOARD_SURGERIES_SERVICE_KEY);
+                    return apptItem;
+                });
+                $scope.upcomingSurgeries = response[0].data;
+                $scope.upcomingSurgeriesUUIDs = [];
+                $scope.teleconsultationSurgeries = [];
+                $scope.upcomingSurgeriesLinks = [];
+                for (var i=0; i<$scope.upcomingSurgeries.length; i++) {
+                    $scope.upcomingSurgeriesUUIDs[i] = $scope.upcomingSurgeries[i].uuid;
+                    delete $scope.upcomingSurgeries[i].uuid;
+                    const [date, timeSlot] = convertUTCtoLocal($scope.upcomingSurgeries[i].DASHBOARD_SURGERIES_START_DATE_KEY, $scope.upcomingSurgeries[i].DASHBOARD_SURGERIES_END_DATE_KEY);
+                    delete $scope.upcomingSurgeries[i].DASHBOARD_SURGERIES_START_DATE_KEY;
+                    delete $scope.upcomingSurgeries[i].DASHBOARD_SURGERIES_END_DATE_KEY;
+                    $scope.upcomingSurgeries[i].DASHBOARD_SURGERIES_DATE_KEY = date;
+                    $scope.upcomingSurgeries[i].DASHBOARD_SURGERIES_SLOT_KEY = timeSlot;
+                    delete $scope.upcomingSurgeries[i].DASHBOARD_SURGERIES_KIND;
+                }
+                $scope.upcomingSurgeriesHeadings = _.keys($scope.upcomingSurgeries[0]);
+                _.map(response[1].data, function (apptItem) {
+                    apptItem.DASHBOARD_SURGERIES_SERVICE_KEY = Bahmni.Common.Util.stringCompressionUtil.decodeDecompress(apptItem.DASHBOARD_SURGERIES_SERVICE_KEY);
+                    return apptItem;
+                });
+                $scope.pastSurgeries = response[1].data;
+                $scope.pastSurgeriesHeadings = _.keys($scope.pastSurgeries[0]);
+            });
+        };
+        return {
+            restrict: 'E',
+            link: link,
+            scope: {
+                patient: "=",
+                section: "="
+            },
+            template: '<ng-include src="contentUrl"/>'
+        };
+    }]);
+

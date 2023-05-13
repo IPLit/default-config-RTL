@@ -368,9 +368,17 @@
                     "template": "<patient-appointments-dashboard section='config' patient='patient'></patient-appointments-dashboard>"
                 }
             },
-	    "Forms-2.0": {
-                "type": "formsV2",
+            "patientSurgeries": {
+                "type": "custom",
                 "displayOrder": 23,
+                "config": {
+                    "title": "DASHBOARD_TITLE_SURGERIES_KEY",
+                    "template": "<patient-surgeries-dashboard section='config' patient='patient'></patient-surgeries-dashboard>"
+                }
+            },
+            "Forms-2.0": {
+                "type": "formsV2",
+                "displayOrder": 24,
                 "dashboardConfig": {
                     "title": null,
                     "maximumNoOfVisits": 1
