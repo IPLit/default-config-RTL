@@ -282,10 +282,6 @@ angular.module('bahmni.common.displaycontrol.custom')
                     delete $scope.upcomingSurgeries[i].DASHBOARD_SURGERIES_KIND;
                 }
                 $scope.upcomingSurgeriesHeadings = _.keys($scope.upcomingSurgeries[0]);
-                _.map(response[1].data, function (apptItem) {
-                    apptItem.DASHBOARD_SURGERIES_SERVICE_KEY = Bahmni.Common.Util.stringCompressionUtil.decodeDecompress(apptItem.DASHBOARD_SURGERIES_SERVICE_KEY);
-                    return apptItem;
-                });
                 $scope.pastSurgeries = response[1].data;
                 $scope.pastSurgeriesHeadings = _.keys($scope.pastSurgeries[0]);
             });
