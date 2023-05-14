@@ -267,10 +267,6 @@ angular.module('bahmni.common.displaycontrol.custom')
                 return [date, timeSlot];
             };
             $q.all([getUpcomingSurgeries(), getPastSurgeries()]).then(function (response) {
-                _.map(response[0].data, function (apptItem) {
-                    apptItem.DASHBOARD_SURGERIES_SERVICE_KEY = Bahmni.Common.Util.stringCompressionUtil.decodeDecompress(apptItem.DASHBOARD_SURGERIES_SERVICE_KEY);
-                    return apptItem;
-                });
                 $scope.upcomingSurgeries = response[0].data;
                 $scope.upcomingSurgeriesUUIDs = [];
                 $scope.teleconsultationSurgeries = [];
