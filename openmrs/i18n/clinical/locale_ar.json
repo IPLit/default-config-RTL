@@ -96,5 +96,10 @@
   "DASHBOARD_UPCOMING_SURGERIES_KEY_LINK": "List View",
   "DASHBOARD_NO_PAST_SURGERIES_KEY": "No past surgeries",
   "DASHBOARD_NO_UPCOMING_SURGERIES_KEY": "No upcoming surgeries",
-  "DASHBOARD_TITLE_SURGERIES_KEY": "Surgeries"
+  "DASHBOARD_TITLE_SURGERIES_KEY": "Surgeries",
+  "Status": "الحالة",
+  "Primary Provider": "دكتور جراح",
+  "Date of Surgery": "تاريخ البدء",
+  "Location": "موقع",
+  "Time of Surgery": "وقت البدء"
 }
