@@ -239,7 +239,7 @@ angular.module('bahmni.common.displaycontrol.custom')
             $scope.contentUrl = appService.configBaseUrl() + "/customDisplayControl/views/patientSurgeriesDashboard.html";
             var getUpcomingSurgeries = function () {
                 var params = {
-                    q: "bahmni.sqlGet.upComingSurgeries",
+                    q: "bahmni.sqlGet.upcomingSurgeries",
                     v: "full",
                     patientUuid: $scope.patient.uuid
                 };
@@ -304,4 +304,3 @@ angular.module('bahmni.common.displaycontrol.custom')
             template: '<ng-include src="contentUrl"/>'
         };
     }]);
-
