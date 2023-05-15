@@ -261,28 +261,21 @@ angular.module('bahmni.common.displaycontrol.custom')
                     withCredentials: true
                 });
             };
-            var convertUTCtoLocal = function (start_date_time, end_date_time) {
-                var date = Bahmni.Common.Util.DateUtil.formatDateWithoutTime(start_date_time);
-                var timeSlot = Bahmni.Common.Util.DateUtil.formatTime(start_date_time) + " - " + Bahmni.Common.Util.DateUtil.formatTime(end_date_time);
-                return [date, timeSlot];
-            };
+
             $q.all([getUpcomingSurgeries(), getPastSurgeries()]).then(function (response) {
                 $scope.upcomingSurgeries = response[0].data;
-                $scope.upcomingSurgeriesUUIDs = [];
-                $scope.teleconsultationSurgeries = [];
-                $scope.upcomingSurgeriesLinks = [];
-                for (var i=0; i<$scope.upcomingSurgeries.length; i++) {
-                    $scope.upcomingSurgeriesUUIDs[i] = $scope.upcomingSurgeries[i].uuid;
-                    delete $scope.upcomingSurgeries[i].uuid;
-                    const [date, timeSlot] = convertUTCtoLocal($scope.upcomingSurgeries[i].DASHBOARD_SURGERIES_START_DATE_KEY, $scope.upcomingSurgeries[i].DASHBOARD_SURGERIES_END_DATE_KEY);
-                    delete $scope.upcomingSurgeries[i].DASHBOARD_SURGERIES_START_DATE_KEY;
-                    delete $scope.upcomingSurgeries[i].DASHBOARD_SURGERIES_END_DATE_KEY;
-                    $scope.upcomingSurgeries[i].DASHBOARD_SURGERIES_DATE_KEY = date;
-                    $scope.upcomingSurgeries[i].DASHBOARD_SURGERIES_SLOT_KEY = timeSlot;
-                    delete $scope.upcomingSurgeries[i].DASHBOARD_SURGERIES_KIND;
-                }
                 $scope.upcomingSurgeriesHeadings = _.keys($scope.upcomingSurgeries[0]);
                 $scope.pastSurgeries = response[1].data;
+                 for (var i=0; i<$scope.pastSurgeries.length; i++) {
+                    if ($scope.pastSurgeries[i].DASHBOARD_ACTUAL_START_DATE_OF_SURGERY !== undefined) {
+                        $scope.pastSurgeries[i].DASHBOARD_START_DATE_OF_SURGERY = $scope.pastSurgeries[i].DASHBOARD_ACTUAL_START_DATE_OF_SURGERY;
+                        $scope.pastSurgeries[i].DASHBOARD_START_TIME_OF_SURGERY = $scope.pastSurgeries[i].DASHBOARD_ACTUAL_START_TIME_OF_SURGERY;
+                        $scope.pastSurgeries[i].DASHBOARD_END_TIME_OF_SURGERY = $scope.pastSurgeries[i].DASHBOARD_ACTUAL_END_TIME_OF_SURGERY;
+                        delete $scope.pastSurgeries[i].DASHBOARD_ACTUAL_START_DATE_OF_SURGERY;
+                        delete $scope.pastSurgeries[i].DASHBOARD_ACTUAL_START_TIME_OF_SURGERY;
+                        delete $scope.pastSurgeries[i].DASHBOARD_ACTUAL_END_TIME_OF_SURGERY;
+                    }
+                 }
                 $scope.pastSurgeriesHeadings = _.keys($scope.pastSurgeries[0]);
             });
         };

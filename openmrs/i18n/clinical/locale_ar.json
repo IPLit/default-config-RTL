@@ -98,8 +98,12 @@
   "DASHBOARD_NO_UPCOMING_SURGERIES_KEY": "No upcoming surgeries",
   "DASHBOARD_TITLE_SURGERIES_KEY": "Surgeries",
   "Status": "الحالة",
-  "Primary Provider": "دكتور جراح",
-  "Date of Surgery": "تاريخ البدء",
+  "Surgeon": "دكتور جراح",
   "Location": "موقع",
-  "Time of Surgery": "وقت البدء"
+  "DASHBOARD_START_DATE_OF_SURGERY": "تاريخ البدء",
+  "DASHBOARD_START_TIME_OF_SURGERY": "وقت البدء",
+  "DASHBOARD_END_TIME_OF_SURGERY": "وقت البدء",
+  "DASHBOARD_ACTUAL_START_DATE_OF_SURGERY": "تاريخ البدء",
+  "DASHBOARD_ACTUAL_START_TIME_OF_SURGERY": "وقت البدء",
+  "DASHBOARD_ACTUAL_END_TIME_OF_SURGERY": "End Time"
 }
