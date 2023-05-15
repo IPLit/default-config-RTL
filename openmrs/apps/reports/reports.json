@@ -149,6 +149,22 @@
             "sqlPath": "/etc/bahmni_config/openmrs/apps/reports/sql/testCount.sql"
         }
     },
+    "ScheduledSurgeries": {
+        "name": "Generate report for Scheduled surgeries",
+        "type": "MRSGeneric",
+        "requiredPrivilege": "app:reports",
+        "config": {
+         "sqlPath": "/etc/bahmni_config/openmrs/apps/reports/sql/OtScheduled.sql"
+       }
+    },
+    "CompletedSurgeries": {
+        "name": "Generate report for Completed surgeriesd",
+        "type": "MRSGeneric",
+        "requiredPrivilege": "app:reports",
+        "config": {
+         "sqlPath": "/etc/bahmni_config/openmrs/apps/reports/sql/OtCompleted.sql"
+       }
+    },
     "bloodPressure": {
         "name": "Blood Pressure",
         "type": "obsCount",
