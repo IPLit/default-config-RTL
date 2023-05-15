@@ -267,14 +267,14 @@ angular.module('bahmni.common.displaycontrol.custom')
                 $scope.upcomingSurgeriesHeadings = _.keys($scope.upcomingSurgeries[0]);
                 $scope.pastSurgeries = response[1].data;
                  for (var i=0; i<$scope.pastSurgeries.length; i++) {
-                    if ($scope.pastSurgeries[i].DASHBOARD_ACTUAL_START_DATE_OF_SURGERY !== undefined) {
+                    if ($scope.pastSurgeries[i].DASHBOARD_ACTUAL_START_DATE_OF_SURGERY !== undefined && $scope.pastSurgeries[i].DASHBOARD_ACTUAL_START_DATE_OF_SURGERY !== "") {
                         $scope.pastSurgeries[i].DASHBOARD_START_DATE_OF_SURGERY = $scope.pastSurgeries[i].DASHBOARD_ACTUAL_START_DATE_OF_SURGERY;
                         $scope.pastSurgeries[i].DASHBOARD_START_TIME_OF_SURGERY = $scope.pastSurgeries[i].DASHBOARD_ACTUAL_START_TIME_OF_SURGERY;
                         $scope.pastSurgeries[i].DASHBOARD_END_TIME_OF_SURGERY = $scope.pastSurgeries[i].DASHBOARD_ACTUAL_END_TIME_OF_SURGERY;
-                        delete $scope.pastSurgeries[i].DASHBOARD_ACTUAL_START_DATE_OF_SURGERY;
-                        delete $scope.pastSurgeries[i].DASHBOARD_ACTUAL_START_TIME_OF_SURGERY;
-                        delete $scope.pastSurgeries[i].DASHBOARD_ACTUAL_END_TIME_OF_SURGERY;
                     }
+                    delete $scope.pastSurgeries[i].DASHBOARD_ACTUAL_START_DATE_OF_SURGERY;
+                    delete $scope.pastSurgeries[i].DASHBOARD_ACTUAL_START_TIME_OF_SURGERY;
+                    delete $scope.pastSurgeries[i].DASHBOARD_ACTUAL_END_TIME_OF_SURGERY;
                  }
                 $scope.pastSurgeriesHeadings = _.keys($scope.pastSurgeries[0]);
             });
