@@ -234,7 +234,7 @@ angular.module('bahmni.common.displaycontrol.custom')
         },
         template: '<ng-include src="contentUrl"/>'
     };
-}]).directive('patientSurgeriesDashboard', ['$http', '$q', '$window','appService', function ($http, $q, $window, appService) {
+}]).directive('patientSurgeriesDashboard', ['$http', '$q', '$window','appService', '$translate' function ($http, $q, $window, appService, $translate) {
         var link = function ($scope) {
             $scope.contentUrl = appService.configBaseUrl() + "/customDisplayControl/views/patientSurgeriesDashboard.html";
             var getUpcomingSurgeries = function () {
@@ -264,17 +264,30 @@ angular.module('bahmni.common.displaycontrol.custom')
 
             $q.all([getUpcomingSurgeries(), getPastSurgeries()]).then(function (response) {
                 $scope.upcomingSurgeries = response[0].data;
+                for (var i=0; i<$scope.upcomingSurgeries.length; i++) {
+                    $scope.upcomingSurgeries[i].EST_TIME = $scope.upcomingSurgeries[i].timeInHrs + $translate.instant("OT_SURGICAL_APPOINTMENT_HOURS") + " : " +
+                                                        $scope.upcomingSurgeries[i].timeInMins + $translate.instant("OT_SURGICAL_APPOINTMENT_MINUTES") + " + " +
+                                                        $scope.upcomingSurgeries[i].cleaningTime + $translate.instant("OT_SURGICAL_APPOINTMENT_MINUTES");
+                    delete $scope.upcomingSurgeries[i].timeInHrs;
+                    delete $scope.upcomingSurgeries[i].timeInMins;
+                    delete $scope.upcomingSurgeries[i].cleaningTime;
+                }
                 $scope.upcomingSurgeriesHeadings = _.keys($scope.upcomingSurgeries[0]);
                 $scope.pastSurgeries = response[1].data;
                  for (var i=0; i<$scope.pastSurgeries.length; i++) {
                     if ($scope.pastSurgeries[i].DASHBOARD_ACTUAL_START_DATE_OF_SURGERY !== undefined && $scope.pastSurgeries[i].DASHBOARD_ACTUAL_START_DATE_OF_SURGERY !== "") {
                         $scope.pastSurgeries[i].DASHBOARD_START_DATE_OF_SURGERY = $scope.pastSurgeries[i].DASHBOARD_ACTUAL_START_DATE_OF_SURGERY;
                         $scope.pastSurgeries[i].DASHBOARD_START_TIME_OF_SURGERY = $scope.pastSurgeries[i].DASHBOARD_ACTUAL_START_TIME_OF_SURGERY;
-                        $scope.pastSurgeries[i].DASHBOARD_END_TIME_OF_SURGERY = $scope.pastSurgeries[i].DASHBOARD_ACTUAL_END_TIME_OF_SURGERY;
                     }
+                    $scope.pastSurgeries[i].EST_TIME = $scope.pastSurgeries[i].timeInHrs + $translate.instant("OT_SURGICAL_APPOINTMENT_HOURS") + " : " +
+                                                        $scope.pastSurgeries[i].timeInMins + $translate.instant("OT_SURGICAL_APPOINTMENT_MINUTES") + " + " +
+                                                        $scope.pastSurgeries[i].cleaningTime + $translate.instant("OT_SURGICAL_APPOINTMENT_MINUTES");
                     delete $scope.pastSurgeries[i].DASHBOARD_ACTUAL_START_DATE_OF_SURGERY;
                     delete $scope.pastSurgeries[i].DASHBOARD_ACTUAL_START_TIME_OF_SURGERY;
-                    delete $scope.pastSurgeries[i].DASHBOARD_ACTUAL_END_TIME_OF_SURGERY;
+                    delete $scope.pastSurgeries[i].timeInHrs;
+                    delete $scope.pastSurgeries[i].timeInMins;
+                    delete $scope.pastSurgeries[i].cleaningTime;
+
                  }
                 $scope.pastSurgeriesHeadings = _.keys($scope.pastSurgeries[0]);
             });
