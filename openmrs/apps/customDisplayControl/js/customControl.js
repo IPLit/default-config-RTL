@@ -176,8 +176,8 @@ angular.module('bahmni.common.displaycontrol.custom')
                 withCredentials: true
             });
         };
-        var convertUTCtoLocal = function (start_date_time, end_date_time) {
-            var date = Bahmni.Common.Util.DateUtil.formatDateWithoutTime(start_date_time);
+        var convertUTCtoLocal = function (start_date, start_date_time, end_date_time) {
+            var date = Bahmni.Common.Util.DateUtil.formatDateWithoutTime(start_date);
             var timeSlot = Bahmni.Common.Util.DateUtil.formatTime(start_date_time) + " - " + Bahmni.Common.Util.DateUtil.formatTime(end_date_time);
             return [date, timeSlot];
         };
@@ -194,7 +194,7 @@ angular.module('bahmni.common.displaycontrol.custom')
                 $scope.upcomingAppointmentsUUIDs[i] = $scope.upcomingAppointments[i].uuid;
                 $scope.teleconsultationAppointments[i] = 'Virtual' === $scope.upcomingAppointments[i].DASHBOARD_APPOINTMENTS_KIND;
                 delete $scope.upcomingAppointments[i].uuid;
-                const [date, timeSlot] = convertUTCtoLocal($scope.upcomingAppointments[i].DASHBOARD_APPOINTMENTS_START_DATE_KEY, $scope.upcomingAppointments[i].DASHBOARD_APPOINTMENTS_END_DATE_KEY);
+                const [date, timeSlot] = convertUTCtoLocal($scope.upcomingAppointments[i].DASHBOARD_APPOINTMENTS_DATE_KEY, $scope.upcomingAppointments[i].DASHBOARD_APPOINTMENTS_START_DATE_KEY, $scope.upcomingAppointments[i].DASHBOARD_APPOINTMENTS_END_DATE_KEY);
                 delete $scope.upcomingAppointments[i].DASHBOARD_APPOINTMENTS_START_DATE_KEY;
                 delete $scope.upcomingAppointments[i].DASHBOARD_APPOINTMENTS_END_DATE_KEY;
                 $scope.upcomingAppointments[i].DASHBOARD_APPOINTMENTS_DATE_KEY = date;
