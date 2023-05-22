@@ -72,7 +72,7 @@
         <tbody>
         <tr ng-repeat="appointment in surgicalAppointmentList" ng-class="{'current-date': isCurrentDate(appointment.derivedAttributes.expectedStartDate)}">
             <td width="80px">
-                {{appointment.derivedAttributes.expectedStartDate | date : 'EEEE' }}
+                {{appointment.derivedAttributes.expectedStartDate | date : 'EEEE' | translate }}
             </td>
             <td width="80px">
                 {{appointment.derivedAttributes.expectedStartDate | bahmniDate}}
