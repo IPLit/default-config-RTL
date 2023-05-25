@@ -16,9 +16,9 @@
   "REGISTRATION_OPD_DAYS_TEXT_KEY" : "أيام العيادات الخارجية هي الاثنين والأربعاء والجمعة.",
   "REGISTRATION_SUNDAYS_HOLIDAY_TEXT_KEY": "الأحد إجازة.",
   "REGISTRATION_SMOKING_INJURIOUS_TEXT_KEY" : "التدخين ومضغ التبغ يمكن أن يسبب السرطان وأمراض القلب والربو.",
-  "REGISTRATION_INSTITUTE_NAME_TEXT_KEY": "Jan Swasthya Sahyog",
+  "REGISTRATION_INSTITUTE_NAME_TEXT_KEY": "البيروني",
   "REGISTRATION_INSTITUTE_REGISTERED_TEXT_KEY": "(مسجل)",
-  "REGISTRATION_INSTITUTE_ADDRESS": "Ganiyari, District - Bilaspur",
+  "REGISTRATION_INSTITUTE_ADDRESS": " ريف دمشق - حرستا",
   "PATIENT_VISIT_ATTRIBUTES_PAGE_KEY":"سمات الزيارة",
   "FEE_INFORMATION_LOCALE_KEY": "معلومات الرسوم",
   "NUTRITIONAL_VALUES_LOCALE_KEY": "القيم الغذائية",
@@ -61,6 +61,14 @@
   "PATIENT_ATTRIBUTE_CLUSTER":"تَجَمَّع",
   "PATIENT_ATTRIBUTE_RATION_CARD_TYPE":"نوع البطاقة التموينية",
   "PATIENT_ATTRIBUTE_FAMILY_INCOME_PER_MONTH_IN_RS":"دخل الأسرة (شهريًا بالروبية)",
-  "CLINICAL_YEARS_TRANSLATION_KEY": "سنوات"
-       
+  "CLINICAL_YEARS_TRANSLATION_KEY": "سنوات",
+  "REGISTRATION_DATED_KEY": "Dated",
+  "REGISTRATION_REGISTRATION_KEY": "Registration",
+  "REGISTRATION_NAME_KEY": "اسم",
+  "REGISTRATION_AGE_KEY": "العمر",
+  "REGISTRATION_GENDER_KEY": "الجنس",
+  "REGISTRATION_ADDRESS_KEY": "العنوان",
+  "REGISTRATION_CITY_KEY": "المدينة",
+  "REGISTRATION_GOVERNORATE_KEY": "المحافظة"
+
 }
