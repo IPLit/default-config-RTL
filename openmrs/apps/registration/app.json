@@ -58,7 +58,7 @@
                 "Parent":"patient"
             },
 
-            "autoCompleteFields":["familyName", "caste"],
+            "autoCompleteFields":["caste"],
             "defaultIdentifierPrefix": "GAN",
             "defaultVisitType": "OPD",
             "searchByIdForwardUrl": "/patient/{{patientUuid}}",
