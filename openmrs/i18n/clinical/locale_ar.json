@@ -39,11 +39,13 @@
   "DASHBOARD_TAB_PATIENT_SUMMARY_KEY": "ملخص المريض",
   "DASHBOARD_TAB_DISCHARGE_SUMMARY_KEY": "ملخص التفريغ" ,
   "DASHBOARD_TAB_ORDERS_KEY": "أوامر",
-  
+
+  "DASHBOARD_TITLE_OBSERVATION_KEY": "المراقبات",
   "LAB_ENTRY_KEY":"مختبر",
   "LAB_INVESTIGATIONS_KEY":"التحقيقات المخبرية" ,
   "PACS_ORDERS_VISIT_PAGE_KEY": "صفحة زيارة طلبات Pacs" ,
 
+  "Vitals Flowsheet": " سجل مراقبة العلامات الحيوية",
   "DISCHARGE_SUMMARY_DIAGNOSIS_KEY" :"التشخيص",
 
   "DISCHARGE_SUMMARY_ADVICE_ON_DISCHARGE_KEY":"نصيحة بشأن الخروج من الخدمة" ,
@@ -97,7 +99,7 @@
   "DASHBOARD_NO_PAST_SURGERIES_KEY": "لا السابقة العمليات الجراحية",
   "DASHBOARD_NO_UPCOMING_SURGERIES_KEY": "لا القادمة العمليات الجراحية",
   "DASHBOARD_TITLE_SURGERIES_KEY": "العمليات الجراحية",
-  "Status": "الحالة",
+  "status": "الحالة",
   "Surgeon": "دكتور جراح",
   "Location": "موقع",
   "DASHBOARD_START_DATE_OF_SURGERY": "تاريخ البدء",

@@ -31,7 +31,7 @@
             },
 			"vitals":{
                 "type":"observation",
-                "translationKey":"DASHBOARD_TITLE_VITALS_KEY",
+                "translationKey":"DASHBOARD_TITLE_OBSERVATION_KEY",
                 "displayOrder":1,
                 "config":{
 					"groupBy": "encounters",
