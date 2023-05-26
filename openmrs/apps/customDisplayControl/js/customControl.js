@@ -265,9 +265,15 @@ angular.module('bahmni.common.displaycontrol.custom')
             $q.all([getUpcomingSurgeries(), getPastSurgeries()]).then(function (response) {
                 $scope.upcomingSurgeries = response[0].data;
                 for (var i=0; i<$scope.upcomingSurgeries.length; i++) {
+                    if ($scope.upcomingSurgeries[i].DASHBOARD_ACTUAL_START_DATE_OF_SURGERY !== undefined && $scope.upcomingSurgeries[i].DASHBOARD_ACTUAL_START_DATE_OF_SURGERY !== "") {
+                        $scope.upcomingSurgeries[i].DASHBOARD_START_DATE_OF_SURGERY = $scope.upcomingSurgeries[i].DASHBOARD_ACTUAL_START_DATE_OF_SURGERY;
+                        $scope.upcomingSurgeries[i].DASHBOARD_START_TIME_OF_SURGERY = $scope.upcomingSurgeries[i].DASHBOARD_ACTUAL_START_TIME_OF_SURGERY;
+                    }
                     $scope.upcomingSurgeries[i].OT_SURGICAL_APPOINTMENT_EST_TIME = $scope.upcomingSurgeries[i].timeInHrs + $translate.instant("OT_SURGICAL_APPOINTMENT_HOURS") + " : " +
                                                         $scope.upcomingSurgeries[i].timeInMins + $translate.instant("OT_SURGICAL_APPOINTMENT_MINUTES") + " + " +
                                                         $scope.upcomingSurgeries[i].cleaningTime + $translate.instant("OT_SURGICAL_APPOINTMENT_MINUTES");
+                    delete $scope.upcomingSurgeries[i].DASHBOARD_ACTUAL_START_DATE_OF_SURGERY;
+                    delete $scope.upcomingSurgeries[i].DASHBOARD_ACTUAL_START_TIME_OF_SURGERY;
                     delete $scope.upcomingSurgeries[i].timeInHrs;
                     delete $scope.upcomingSurgeries[i].timeInMins;
                     delete $scope.upcomingSurgeries[i].cleaningTime;
