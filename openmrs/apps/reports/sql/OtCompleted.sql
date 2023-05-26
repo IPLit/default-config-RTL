@@ -24,7 +24,7 @@ SELECT
   JOIN person_name pn ON pn.person_id = sa.patient_id AND pn.voided IS FALSE
   LEFT join provider pro_s ON pro_s.provider_id = sb.primary_provider_id
   LEFT JOIN person_name pns ON pns.person_id = pro_s.person_id AND pns.voided IS FALSE
-  LEFT join provider pro_other_s ON pro_other_s.provider_id = sa_other_s.value
+  LEFT join provider pro_other_s ON pro_other_s.person_id = sa_other_s.value
   LEFT JOIN person_name pno ON pno.person_id = pro_other_s.person_id AND pno.voided IS FALSE
   LEFT JOIN patient_identifier pi ON pi.patient_id = pn.person_id AND pi.voided IS FALSE
   INNER JOIN patient_identifier_type pit ON pi.identifier_type = pit.patient_identifier_type_id AND
