@@ -25,7 +25,7 @@
                 <tbody>
                 <tr ng-repeat="surgery in upcomingSurgeries">
                     <td ng-repeat="detail in surgery">
-                        {{detail}}
+                        {{detail | translate}}
                     </td>
 <!--                     <td>
                         <button style="background: #669998; color: white;" ng-if="showJoinTeleconsultationOption($index)" ng-click="openJitsiMeet($index)">
@@ -60,7 +60,7 @@
                 <tbody>
                 <tr ng-repeat="surgery in pastSurgeries">
                     <td ng-repeat="detail in surgery">
-                        {{detail}}
+                        {{detail | uppercase | translate}}
                     </td>
                 </tr>
                 </tbody>
