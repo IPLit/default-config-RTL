@@ -109,5 +109,11 @@
   "DASHBOARD_ACTUAL_START_TIME_OF_SURGERY": "وقت البدء",
   "OT_SURGICAL_APPOINTMENT_EST_TIME":"   الزمن التقديري   ",
   "OT_SURGICAL_APPOINTMENT_HOURS": "ساعات",
-  "OT_SURGICAL_APPOINTMENT_MINUTES": "دقائق"
+  "OT_SURGICAL_APPOINTMENT_MINUTES": "دقائق",
+  "REQUESTED":"مطلوبة" ,
+  "SCHEDULED":"مجدولة",
+  "COMPLETED": "مكتملة",
+  "CANCELLED": "تم إلغاؤها",
+  "CHECKED IN": "تم تسجيل الوصول",
+  "MISSED": "فاته"
 }
