@@ -22,11 +22,11 @@
 </style>
 <h4> {{'OT Schedule' | translate}}</h4>
 <p ng-if="weekOrDay === 'day'">
-    {{viewDate | date : 'dd MMM yyyy, EEE' | translate}}
+    {{viewDate | bahmniDateDay}}
 </p>
 
 <p ng-if="weekOrDay === 'week'">
-    {{weekStartDate | date : 'dd MMM yyyy, EEE'}} to {{weekEndDate | date : 'dd MMM yyyy, EEE' | translate}}
+    {{weekStartDate | bahmniDateDay}} {{ 'to' | translate}} {{weekEndDate | bahmniDateDay}}
 </p>
     <table cellpadding="2" cellspacing="0">
         <thead>
