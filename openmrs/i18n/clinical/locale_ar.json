@@ -114,6 +114,6 @@
   "SCHEDULED":"مجدولة",
   "COMPLETED": "مكتملة",
   "CANCELLED": "تم إلغاؤها",
-  "CHECKED IN": "تم تسجيل الوصول",
+  "CHECKEDIN": "تم تسجيل الوصول",
   "MISSED": "فاته"
 }
