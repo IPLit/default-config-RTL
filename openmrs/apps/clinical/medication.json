@@ -8,6 +8,7 @@
       },
       "inputOptionsConfig": {
         "defaultDurationUnit": "Day(s)",
+        "allowOnlyCodedDrugs":true,
         "hideOrderSet" : false,
         "defaultInstructions": "As directed",
         "frequencyDefaultDurationUnitsMap": [
