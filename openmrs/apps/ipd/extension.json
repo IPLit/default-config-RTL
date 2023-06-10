@@ -37,17 +37,5 @@
     "label": "To Discharge",
     "order": 3,
     "requiredPrivilege": "app:adt"
-  },
-  "bahmniAdtPatientsSearchAllPatients":{
-    "id": "bahmni.adt.patients.search.allPatients",
-    "extensionPointId": "org.bahmni.patient.search",
-    "type": "config",
-    "extensionParams": {
-      "translationKey": "MODULE_LABEL_ALL_KEY",
-      "forwardUrl" : "#/bedManagement/patient/{{patientUuid}}"
-    },
-    "label": "All",
-    "order": 4,
-    "requiredPrivilege": "app:adt"
   }
 }
