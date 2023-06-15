@@ -115,5 +115,6 @@
   "COMPLETED": "مكتملة",
   "CANCELLED": "تم إلغاؤها",
   "CHECKEDIN": "تم تسجيل الوصول",
-  "MISSED": "فاته"
+  "MISSED": "فاته",
+  "CONSULTATION_NOTES_WIDGET": "ملاحظات الاستشارة"
 }
