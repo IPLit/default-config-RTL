@@ -1,9 +1,12 @@
 {
-  "id": "bahmni.homepage",
+  "id": "bahmni.home",
   "extensionPoints": [
     {
       "id": "org.bahmni.home.dashboard",
       "description": "Bahmni Home Page"
     }
-  ]
+  ],
+  "config": {
+	"restrictLocationToUser": true
+  }
 }
