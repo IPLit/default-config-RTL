@@ -23,7 +23,7 @@
         "visitUuid"
     ],
     "config": {
-        "restrictLocationToUser": true,
+        "restrictLocationToUser": false,
         "hideConditions": false,
         "enableRadiologyOrderOptions":["Urgent","NeedsPrint"],
         "enableLabOrderOptions":["Urgent", "NeedsPrint"],
