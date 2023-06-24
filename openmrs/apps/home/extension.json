@@ -120,6 +120,16 @@
     "order": 13,
     "requiredPrivilege": "app:admin"
   },
+  "drug": {
+    "id": "bahmni.drug",
+    "extensionPointId": "org.bahmni.home.dashboard",
+    "type": "link",
+    "translationKey": "MODULE_LABEL_DRUG_KEY",
+    "url": "https://rtltesting.bahmni.in/openmrs/admin/concepts/conceptDrug.form",
+    "icon": "fa-plus-circle ",
+    "order": 15,
+    "requiredPrivilege": "app:admin"
+  },
   "appointmentScheduling": {
     "id": "bahmni.appointment.scheduling",
     "extensionPointId": "org.bahmni.home.dashboard",
