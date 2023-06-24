@@ -21,5 +21,6 @@
     "Subcenter 2 (SEM)": "المركز الفرعي 2 (SEM)",
     "Subcenter 3 (SIV)": "المركز الفرعي 3 (SIV)",
     "MODULE_LABEL_LAB_ENTRY_KEY": "المختبر",
-    "Operation Theatre": "قسم العمليات"
+    "Operation Theatre": "قسم العمليات",
+    "MODULE_LABEL_DRUG_KEY": "دواء"
 }
