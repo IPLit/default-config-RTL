@@ -118,7 +118,7 @@
     "url": "/atomfeed-console",
     "icon": "fa fa-terminal",
     "order": 13,
-    "requiredPrivilege": "app:admin"
+    "requiredPrivilege": "app:adminadvance"
   },
   "drug": {
     "id": "bahmni.drug",
@@ -128,7 +128,7 @@
     "url": "../../openmrs/admin/concepts/conceptDrug.form",
     "icon": "fa-plus-circle ",
     "order": 15,
-    "requiredPrivilege": "app:admin"
+    "requiredPrivilege": "Admin-App Drug"
   },
   "appointmentScheduling": {
     "id": "bahmni.appointment.scheduling",
