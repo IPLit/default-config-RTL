@@ -125,7 +125,7 @@
     "extensionPointId": "org.bahmni.home.dashboard",
     "type": "link",
     "translationKey": "MODULE_LABEL_DRUG_KEY",
-    "url": "https://rtltesting.bahmni.in/openmrs/admin/concepts/conceptDrug.form",
+    "url": "/openmrs/admin/concepts/conceptDrug.form",
     "icon": "fa-plus-circle ",
     "order": 15,
     "requiredPrivilege": "app:admin"
