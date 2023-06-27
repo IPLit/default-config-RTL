@@ -69,6 +69,7 @@
   "REGISTRATION_GENDER_KEY": "الجنس",
   "REGISTRATION_ADDRESS_KEY": "العنوان",
   "REGISTRATION_CITY_KEY": "المدينة",
-  "REGISTRATION_GOVERNORATE_KEY": "المحافظة"
+  "REGISTRATION_GOVERNORATE_KEY": "المحافظة",
+  "ERROR_MESSAGE_NOT_FOUND": " المعلومات المطلوبة غير موجودة"
 
 }

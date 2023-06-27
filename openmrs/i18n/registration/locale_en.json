@@ -30,6 +30,8 @@
   "REGISTRATION_GENDER_KEY": "Gender",
   "REGISTRATION_ADDRESS_KEY": "House No.,Street",
   "REGISTRATION_CITY_KEY": "City",
-  "REGISTRATION_GOVERNORATE_KEY": "Governorate"
+  "REGISTRATION_GOVERNORATE_KEY": "Governorate",
+  "ERROR_MESSAGE_NOT_FOUND": "The requested information does not exist"
+
 
 }
