@@ -56,15 +56,15 @@
                 "displayOrder": 4,
                 "config": {
                     "translationKey": "VISIT_TITLE_LAB_ORDERS_KEY",
-                    "showChart": true,
-                    "showTable": false,
+                    "showChart": false,
+                    "showTable": true,
                     "showOrders": true,
-                    "showNormalLabResults": false,
+                    "showNormalLabResults": true,
                     "showCommentsExpanded": false,
                     "showAccessionNotes": true,
-                    "numberOfVisits": 10,
+                    "numberOfVisits": 1,
                     "showDetailsButton": false,
-                    "hideVisitDate": true
+                    "hideVisitDate": false
                 }
             },
             "prescriptions":{
