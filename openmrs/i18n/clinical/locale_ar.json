@@ -116,5 +116,6 @@
   "CANCELLED": "تم إلغاؤها",
   "CHECKEDIN": "تم تسجيل الوصول",
   "MISSED": "فاته",
-  "CONSULTATION_NOTES_WIDGET": "ملاحظات الاستشارة"
+  "CONSULTATION_NOTES_WIDGET": "ملاحظات الاستشارة",
+  "Status": "الحالة"
 }
