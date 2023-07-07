@@ -165,6 +165,22 @@
          "sqlPath": "/etc/bahmni_config/openmrs/apps/reports/sql/OtCompleted.sql"
        }
     },
+    "countDeath": {
+        "name": "Count of Deaths",
+        "type": "MRSGeneric",
+        "requiredPrivilege": "app:reports",
+        "config": {
+         "sqlPath": "/etc/bahmni_config/openmrs/apps/reports/sql/countDeath.sql"
+       }
+    },
+    "DeathLocation": {
+        "name": "Death by location/reason report",
+        "type": "MRSGeneric",
+        "requiredPrivilege": "app:reports",
+        "config": {
+         "sqlPath": "/etc/bahmni_config/openmrs/apps/reports/sql/DeathLocation.sql"
+       }
+    },
     "bloodPressure": {
         "name": "Blood Pressure",
         "type": "obsCount",
