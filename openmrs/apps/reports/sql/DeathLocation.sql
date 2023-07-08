@@ -25,4 +25,4 @@ FROM visit v
   LEFT OUTER JOIN person_attribute_type pat ON pat.person_attribute_type_id = pa.person_attribute_type_id AND pat.retired is FALSE
   WHERE v.voided is FALSE
   AND cast(CONVERT_TZ(v.date_started,'+00:00','+5:30') AS DATE) BETWEEN '#startDate#' AND '#endDate#' AND p.dead=1
-GROUP BY v.visit_id;
+GROUP BY p.death_date;
