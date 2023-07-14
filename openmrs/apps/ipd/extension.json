@@ -32,7 +32,7 @@
     "extensionParams": {
       "searchHandler": "emrapi.sqlSearch.patientsToDischarge",
       "translationKey": "MODULE_LABEL_TO_DISCHARGE_KEY",
-      "forwardUrl" : "#/bedManagement/patient/{{patientUuid}}?patientToDischarge=true"
+      "forwardUrl" : "#/bedManagement/patient/{{patientUuid}}"
     },
     "label": "To Discharge",
     "order": 3,
