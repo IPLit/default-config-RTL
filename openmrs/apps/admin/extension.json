@@ -9,7 +9,7 @@
         "url": "#/csv",
         "icon": "fa-upload",
         "order": 1,
-        "requiredPrivilege": "app:adminadvance"
+        "requiredPrivilege": "app:admin"
     },
     "csvExport":{
         "id": "bahmni.admin.csvExport",
@@ -21,7 +21,7 @@
         "url": "#/csvExport",
         "icon": "fa-download",
         "order": 1,
-        "requiredPrivilege": "app:adminadvance"
+        "requiredPrivilege": "app:admin"
     },
     "auditLog":{
         "id": "bahmni.admin.auditLog",
@@ -33,7 +33,7 @@
         "url": "#/auditLog",
         "icon": "fa-eye",
         "order": 1,
-        "requiredPrivilege": "app:adminadvance"
+        "requiredPrivilege": "app:admin"
     },
     "orderSet":{
         "id": "bahmni.admin.orderSet",
@@ -45,7 +45,7 @@
         "url": "#/ordersetdashboard",
         "icon": "fa-upload",
         "order": 1,
-        "requiredPrivilege": "app:adminadvance"
+        "requiredPrivilege": "app:admin"
     },
     "deptInfo":{
         "id": "bahmni.admin.deptInfo",
@@ -81,6 +81,6 @@
         "url": "/openmrs/owa/bedmanagement/admissionLocations.html",
         "icon": "icon-bahmni-inpatient",
         "order": 1,
-        "requiredPrivilege": "app:adminadvance"
+        "requiredPrivilege": "app:admin"
     }
 }
