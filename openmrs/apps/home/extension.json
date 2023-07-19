@@ -118,7 +118,7 @@
     "url": "/atomfeed-console",
     "icon": "fa fa-terminal",
     "order": 13,
-    "requiredPrivilege": "app:adminadvance"
+    "requiredPrivilege": "app:admin"
   },
   "drug": {
     "id": "bahmni.drug",
