@@ -130,6 +130,26 @@
     "order": 15,
     "requiredPrivilege": "Admin-App Drug"
   },
+  "deptInfo":{
+    "id": "bahmni.admin.deptInfo",
+    "extensionPointId": "org.bahmni.home.dashboard",
+    "type": "link",
+    "label": "Department Information",
+    "url": "../admin/views/deptInfo.html",
+    "icon": "far fa-building",
+    "order": 15,
+    "requiredPrivilege": "app:RecptInfo"
+  },
+  "docInfo":{
+    "id": "bahmni.admin.docInfo",
+    "extensionPointId": "org.bahmni.home.dashboard",
+    "type": "link",
+    "label": "Doctor Information",
+    "url": "../admin/views/doctorInfo.html",
+    "icon": "fas fa-user-md",
+    "order": 15,
+    "requiredPrivilege": "app:RecptInfo"
+  },
   "appointmentScheduling": {
     "id": "bahmni.appointment.scheduling",
     "extensionPointId": "org.bahmni.home.dashboard",
