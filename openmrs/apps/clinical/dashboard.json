@@ -243,52 +243,6 @@
                     }
                 }
             },
-            "gynaecology":{  
-                "translationKey":"DASHBOARD_TITLE_GYNAECOLOGY_KEY",
-                "type":"gynaecology",
-                "isObservation":true,
-                "displayOrder":15,
-                "dashboardConfig":{  
-                    "conceptNames":[  
-                        "Gynaecology"
-                    ],
-                    "showDetailsButton":true,
-                    "numberOfVisits":2
-                },
-                "expandedViewConfig":{  
-                    "conceptNames":[  
-                        "Gynaecology"
-                    ],
-                    "numberOfVisits":2,
-                    "showDetailsButton":true,
-                    "pivotTable":{  
-
-                    }
-                }
-            },
-            "obstetrics":{  
-                "translationKey":"DASHBOARD_TITLE_OBSTETRICS_KEY",
-                "type":"obstetrics",
-                "isObservation":true,
-                "displayOrder":16,
-                "dashboardConfig":{  
-                    "showDetailsButton":true,
-                    "conceptNames":[  
-                        "Obstetrics"
-                    ],
-                    "numberOfVisits":2
-                },
-                "expandedViewConfig":{  
-                    "conceptNames":[  
-                        "Obstetrics"
-                    ],
-                    "numberOfVisits":2,
-                    "showDetailsButton":true,
-                    "pivotTable":{  
-
-                    }
-                }
-            },
             "ConsultationNotes":{  
                 "translationKey":"CONSULTATION_NOTES_WIDGET",
                 "type":"Consultation",
@@ -372,16 +326,6 @@
                 "type": "conditionsList",
                 "displayOrder": 20
             },
-            "formsDisplay": {
-                "type": "forms",
-                "displayOrder": 21,
-                "dashboardConfig": {
-                    "title": null,
-                    "maximumNoOfVisits": 10
-                },
-                "formGroup": [ ],
-                "translationKey": "DASHBOARD_TITLE_FORMS_DISPLAY_CONTROL_KEY"
-            },
             "patientAppointments": {
                 "type": "custom",
                 "displayOrder": 22,
@@ -396,34 +340,6 @@
                 "config": {
                     "title": "DASHBOARD_TITLE_SURGERIES_KEY",
                     "template": "<patient-surgeries-dashboard section='config' patient='patient'></patient-surgeries-dashboard>"
-                }
-            },
-            "Forms-2.0": {
-                "type": "formsV2",
-                "displayOrder": 24,
-                "dashboardConfig": {
-                    "title": null,
-                    "maximumNoOfVisits": 1
-                },
-                "formGroup": [ ],
-                "translationKey": "DASHBOARD_TITLE_FORMS2_DISPLAY_CONTROL_KEY"
-            },
-            "Form 2 Obs To Obs": {
-                "displayType": "Half-Page",
-                "translationKey": "DASHBOARD_TITLE_FORMS2_OBS_TO_OBS_DISPLAY_CONTROL_KEY",
-                "type": "obsToObsFlowSheet",
-                "dashboardConfig": {
-                    "numberOfVisits": 1,
-                    "formNames": [],
-                    "groupByConcept": "",
-                    "isEditable": true,
-                    "conceptNames": []
-                },
-                "expandedViewConfig": {
-                    "formNames": [],
-                    "isEditable": true,
-                    "groupByConcept": "",
-                    "conceptNames": []
                 }
             }
         }
