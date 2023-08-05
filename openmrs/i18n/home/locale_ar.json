@@ -1,18 +1,18 @@
-    {
+{
     "MODULE_LABEL_REGISTRATION_KEY": "التسجيل",
-    "MODULE_LABEL_CLINICAL_KEY": "العيادات",
-    "MODULE_LABEL_INPATIENT_KEY": "مريض داخلي",
-    "MODULE_LABEL_RADIOLOGY_UPLOAD_KEY": "تحميل الأشعة",
-    "MODULE_LABEL_PATIENT_DOCUMENTS_KEY": "وثائق المريض",
+    "MODULE_LABEL_CLINICAL_KEY": "التطبيق الطبي",
+    "MODULE_LABEL_INPATIENT_KEY": "الاستشفاء",
+    "MODULE_LABEL_RADIOLOGY_UPLOAD_KEY": "إضافة الفحوص الشعاعية",
+    "MODULE_LABEL_PATIENT_DOCUMENTS_KEY": "ملفات المريض",
     "MODULE_LABEL_ADMIN_KEY": "الإدارة",
     "MODULE_LABEL_REPORTS_KEY": "التقارير",
     "MODULE_LABEL_APOOINTMENTS_KEY": "المواعيد",
     "MODULE_LABEL_ORDERS_KEY": "الطلبات",
-    "MODULE_LABEL_PROGRAMS_KEY": "البرامج",
+    "MODULE_LABEL_PROGRAMS_KEY": "البرامج العلاجية",
     "MODULE_LABEL_IMPLEMENTER_INTERFACE_KEY": "واجهة المنفذ",
     "MODULE_LABEL_ATOMFEED_CONSOLE_KEY": "وحدة تحكم AtomFeed",
-    "MODULE_LABEL_APPOINTMENT_SCHEDULING_KEY": "جدولة المواعيد",
-    "MODULE_LABEL_BED_MANAGEMENT_KEY": "إدارة الأسرة",
+    "MODULE_LABEL_APPOINTMENT_SCHEDULING_KEY": "إدارة المواعيد",
+    "MODULE_LABEL_BED_MANAGEMENT_KEY": "إدارة الجناح",
     "General Ward" : "الجناح العام",
     "Labour Ward": "جناح الولادة",
     "OPD-1": "قسم العيادات الخارجية",
@@ -22,5 +22,6 @@
     "Subcenter 3 (SIV)": "المركز الفرعي 3 (SIV)",
     "MODULE_LABEL_LAB_ENTRY_KEY": "المختبر",
     "Operation Theatre": "قسم العمليات",
-    "MODULE_LABEL_DRUG_KEY": "دواء"
+	"MODULE_LABEL_DRUG_KEY" : "إضافة دواء"
+
 }
