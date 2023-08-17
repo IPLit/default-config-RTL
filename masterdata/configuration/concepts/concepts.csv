@@ -1,13 +1,11 @@
 uuid,Fully specified name:en,Fully specified name:ar,Short name:en,Short name:ar,Description:en,Data class,Data type,Members,Answers
-180b5593-8af4-48fe-9ac2-4ff348365c4e,Baby Name,اسم الطفل,,,,Misc,Text
-e605731b-2e81-41a9-8446-2ed442c339e2,Date,تاريخ,,,,Misc,Date
-544634f2-4c08-48b0-9b2b-35251189a59b,Male,ذكر,,,,Misc,N/A
-e74aebd1-51b5-424f-b9f0-339fd8cd3588,Female,أنثى,,,,Misc,N/A
-dfc50c35-d88a-4e6c-aad6-2ac09373968c,Other,آخر,,,,Misc,N/A
+180b5593-8af4-48fe-9ac2-4ff348365c4e,Baby Name,اسم الطفل,,,,Misc,Text,,
+e605731b-2e81-41a9-8446-2ed442c339e2,Date,تاريخ,,,,Misc,Date,,
+544634f2-4c08-48b0-9b2b-35251189a59b,Male,ذكر,,,,Misc,N/A,,
+e74aebd1-51b5-424f-b9f0-339fd8cd3588,Female,أنثى,,,,Misc,N/A,,
+dfc50c35-d88a-4e6c-aad6-2ac09373968c,Other,آخر,,,,Misc,N/A,,
 2e8d19a5-0a6d-42f6-95d9-9fb760618857,"Delivery Note, Liveborn gender",مذكرة التسليم ، ليفبورن الجنس,,,,Misc,Coded,,544634f2-4c08-48b0-9b2b-35251189a59b;e74aebd1-51b5-424f-b9f0-339fd8cd3588;dfc50c35-d88a-4e6c-aad6-2ac09373968c
-5090AAAAAAAAAAAAAAAAAAAAAAAAAAAA,HEIGHT,ارتفاع,,,,Misc,Numeric
-5089AAAAAAAAAAAAAAAAAAAAAAAAAAAA,WEIGHT,وزن,,,,Misc,Numeric
-aaf07b0d-bc5f-48e9-adad-dbd536b3a8fa,Mother Name,اسم الأم,,,,Misc,Text
-fe73c412-bf77-400a-b30c-73d17c49f836,Father Name,اسم الأب,,,,Misc,Text
-4dfead0f-c370-4266-a401-1a4cc1799bf5,Address,عنوان,,,,Misc,Text
+aaf07b0d-bc5f-48e9-adad-dbd536b3a8fa,Mother Name,اسم الأم,,,,Misc,Text,,
+fe73c412-bf77-400a-b30c-73d17c49f836,Father Name,اسم الأب,,,,Misc,Text,,
+4dfead0f-c370-4266-a401-1a4cc1799bf5,Address,عنوان,,,,Misc,Text,,
 16ee1087-cc41-41b9-a41a-2930369978a6,Birth information,معلومات الميلاد,,,,Misc,N/A,180b5593-8af4-48fe-9ac2-4ff348365c4e;e605731b-2e81-41a9-8446-2ed442c339e2;2e8d19a5-0a6d-42f6-95d9-9fb760618857;5090AAAAAAAAAAAAAAAAAAAAAAAAAAAA;5089AAAAAAAAAAAAAAAAAAAAAAAAAAAA;aaf07b0d-bc5f-48e9-adad-dbd536b3a8fa;fe73c412-bf77-400a-b30c-73d17c49f836;4dfead0f-c370-4266-a401-1a4cc1799bf5,
