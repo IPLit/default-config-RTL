@@ -530,7 +530,7 @@
                 }
             },
             "malaria":{  
-                "title":"Malaria",
+                "translationKey":"DASHBOARD_TITLE_MALARIA_KEY",
                 "type":"obsToObsFlowSheet",
                 "displayType":"Full-Page",
                 "displayOrder":26,
@@ -547,7 +547,7 @@
             },
             "Chronic Treatment Chart":{  
                 "displayType":"Full-Page",
-                "title":"Chronic Treatment Chart",
+                "translationKey":"DASHBOARD_TITLE_CHRONIC_TREATMENT_CHART_KEY",,
                 "type":"chronicTreatmentChart",
                 "dashboardConfig":{  
                     "drugs":[  
