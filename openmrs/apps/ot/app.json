@@ -11,8 +11,8 @@
     "primarySurgeonsForOT" : ["Yogesh Kumar","Super Man","Unknown Provider","labsystem system","Billing System","automation automation"],
     "printListViewTemplateUrl" : "/bahmni_config/openmrs/apps/ot/printListView.html",
     "calendarView": {
-      "dayViewStart": "08:00",
-      "dayViewEnd": "18:00",
+      "dayViewStart": "00:00",
+      "dayViewEnd": "24:00",
       "dayViewSplit": "60"
     },
     "startOfWeek": "Monday"
