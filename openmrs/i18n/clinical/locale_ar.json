@@ -118,5 +118,8 @@
   "status" : "الحالة",
   "Status" : "الحالة",
   "Surgeon"	: "الطبيب الجراح",
-  "Vitals Flowsheet" : " سجل مراقبة العلامات الحيوية"
+  "Vitals Flowsheet" : " سجل مراقبة العلامات الحيوية",
+  "DASHBOARD_TITLE_MALARIA_KEY":"الملاريا",
+  "DASHBOARD_TITLE_CHRONIC_TREATMENT_CHART_KEY": "مخطط العلاجات المزمنة",
+  "DASHBOARD_TITLE_CONSULTATION_NOTES_KEY ": "ملاحظات الاستشارة"
 }
