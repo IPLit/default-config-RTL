@@ -70,7 +70,16 @@
   "REGISTRATION_ADDRESS_KEY" : "العنوان",
   "REGISTRATION_CITY_KEY" : "المدينة",
   "REGISTRATION_GOVERNORATE_KEY" : "المحافظة",
-  "ERROR_MESSAGE_NOT_FOUND" : " المعلومات المطلوبة غير موجودة"
+  "ERROR_MESSAGE_NOT_FOUND" : " المعلومات المطلوبة غير موجودة",
+  "City":"المدينة",
+	"Patient_Identifier":"معرّف المريض",
+	"Start_OPD_visit":"بدء زيارة لقسم العيادات الخارحية",
+  "Start_Admit_patient_visit":"بدء زيارة قبول في المستشفى",
+  "Start_EMERGENCY_visit":"بدء زيارة إسعافية للمستشفى",
+  "Start_PHARMACY_VISIT_visit":"بدء زيارة لصيدلية المستشفى",
+  "Start_LAB_VISIT_visit":"بدء زيارة لمخبر المستشفى",
+  "Start_IPD_visit":"بدء زيارة لأقسام الاستشفاء",
+  "Start_Special_OPD_visit":"بدء زيارة لقسم العيادات الخارجية الخاصة"
 
        
 }
