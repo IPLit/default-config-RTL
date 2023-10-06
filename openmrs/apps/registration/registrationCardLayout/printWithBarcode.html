@@ -1,5 +1,7 @@
 <link rel="stylesheet" href="/bahmni_config/openmrs/apps/registration/registrationCardLayout/css/print.css"/>
-<table border="1" cellpadding="0" cellspacing="1" class="registrationCard-print-table">
+<link rel="stylesheet" href="../styles/registrationPrint.css" media="print" ng-if="!userLanguageDirRtl"/>
+<link rel="stylesheet" href="../styles/registrationPrint-rtl.css" media="print" ng-if="userLanguageDirRtl"/>
+<table border="1" cellpadding="0" cellspacing="1" class="">
     <tbody>
     <tr>
         <td class="print-table-left" valign="top">
@@ -7,11 +9,11 @@
                 <tr>
                     <td class="logo">
                         <p>
-                            <img src="/bahmni_config/openmrs/apps/registration/registrationCardLayout/images/bahmni-icon.png" style="width: 12mm; height: 12mm; "/>
+                            <img src="/bahmni_config/openmrs/apps/registration/registrationCardLayout/images/Syrialogo.png" style="width: 12mm; height: 12mm; "/>
                         </p>
                     </td>
                     <td class="print-table-right-header">
-                        <h3 class="print-center">Bahmni Hospital</h3>
+                        <h3 class="print-center">{{"HOSPITAL_RGISTRATION_NAME" |translate}}</h3>
                     </td>
                     <td class="registrationCard-photo">
                         <img ng-src="{{patient.image}}" style="width: 20mm; height: 20mm; "
@@ -23,7 +25,7 @@
                 <tbody>
                 <tr>
                     <td class="registrationCard-details-name">
-                        <span class="hindi-text">Registration Date</span>
+                        <span class="hindi-text">{{"HOSPITAL_RGISTRATION_DATE" |translate}}</span>
                     </td>
                     <td class="registrationCard-details-seperator"> :  </td>
                     <td>{{patient.registrationDate | bahmniDate}} </td>
@@ -31,7 +33,7 @@
             
                 <tr>
                     <td class="registrationCard-details-name">
-                        <span class="hindi-text">Full Name</span>
+                        <span class="hindi-text">{{"HOSPITAL_RGISTRATION_FULL_NAME" |translate}}</span>
                     </td>
                     <td class="registrationCard-details-seperator"> :  </td>
                     <td>
@@ -40,14 +42,14 @@
                 </tr>
                 <tr>
                     <td class="registrationCard-details-name">
-                        <span class="hindi-text">Age</span>
+                        <span class="hindi-text">{{"HOSPITAL_RGISTRATION_AGE" |translate}}</span>
                     </td>
                     <td class="registrationCard-details-seperator"> :  </td>
                     <td>{{patient.age | age}} </td>
                 </tr>
                 <tr>
                     <td class="registrationCard-details-name">
-                        <span class="hindi-text">Gender</span>
+                        <span class="hindi-text"> {{"HOSPITAL_RGISTRATION_GENDER" |translate}}</span>
                     </td>
                     <td class="registrationCard-details-seperator"> :  </td>
                     <td>{{patient.gender}} </td>
@@ -55,7 +57,7 @@
             
                 <tr>
                     <td class="registrationCard-details-name">
-                        <span class="hindi-text">Village</span>
+                        <span class="hindi-text"> {{"HOSPITAL_RGISTRATION_VILLAGE" |translate}}</span>
                     </td>
                     <td class="registrationCard-details-seperator"> :  </td>
                     <td>{{patient.address.cityVillage}} </td>
