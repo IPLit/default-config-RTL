@@ -138,7 +138,7 @@
     "url": "../admin/views/deptInfo.html",
     "icon": "far fa-building",
     "order": 15,
-    "requiredPrivilege": "app:admin"
+    "requiredPrivilege": "app:RecptInfo"
   },
   "docInfo":{
     "id": "bahmni.admin.docInfo",
@@ -148,7 +148,7 @@
     "url": "../admin/views/doctorInfo.html",
     "icon": "fas fa-user-md",
     "order": 15,
-    "requiredPrivilege": "app:admin"
+    "requiredPrivilege": "app:RecptInfo"
   },
   "appointmentScheduling": {
     "id": "bahmni.appointment.scheduling",
