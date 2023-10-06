@@ -1,5 +1,7 @@
 <link rel="stylesheet" href="/bahmni_config/openmrs/apps/registration/registrationCardLayout/css/print.css"/>
-<table border="1" cellpadding="0" cellspacing="1" class="registrationCard-print-table">
+<link rel="stylesheet" href="../styles/registrationPrint.css" media="print" ng-if="!userLanguageDirRtl"/>
+<link rel="stylesheet" href="../styles/registrationPrint-rtl.css" media="print" ng-if="userLanguageDirRtl"/>
+<table border="1" cellpadding="0" cellspacing="1" class="">
     <tbody>
     <tr>
         <td  class="print-table-left">
@@ -40,7 +42,7 @@
                 <tr>
                     <td class="logo">
                         <p>
-                            <img src="/bahmni_config/openmrs/apps/registration/registrationCardLayout/images/bahmni-icon.png" style="width: 12mm; height: 12mm; "/>
+                            <img src="/bahmni_config/openmrs/apps/registration/registrationCardLayout/images/Syrialogo.png" style="width: 12mm; height: 12mm; "/>
                         </p>
                     </td>
                     <td class="print-table-right-header">
