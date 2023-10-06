@@ -16,9 +16,9 @@
   "REGISTRATION_OPD_DAYS_TEXT_KEY" : "أيام العيادات الخارجية هي الاثنين، الأربعاء والجمعة.",
   "REGISTRATION_SUNDAYS_HOLIDAY_TEXT_KEY": "الأحد إجازة.",
   "REGISTRATION_SMOKING_INJURIOUS_TEXT_KEY" : "يمكن أن يسبب التدخين ومضغ التبغ: السرطان، أمراض القلب والربو.",
-  "REGISTRATION_INSTITUTE_NAME_TEXT_KEY": "Jan Swasthya Sahyog",
+  "REGISTRATION_INSTITUTE_NAME_TEXT_KEY": "مستشفى تشرين الجامعي",
   "REGISTRATION_INSTITUTE_REGISTERED_TEXT_KEY": "(مسجل)",
-  "REGISTRATION_INSTITUTE_ADDRESS": "Ganiyari, District - Bilaspur",
+  "REGISTRATION_INSTITUTE_ADDRESS": "سوريا – الالذقي ة",
   "PATIENT_VISIT_ATTRIBUTES_PAGE_KEY":"خصائص الزيارة",
   "FEE_INFORMATION_LOCALE_KEY": "معلومات الرسوم",
   "NUTRITIONAL_VALUES_LOCALE_KEY": "القيم التغذوية",
@@ -79,7 +79,14 @@
   "Start_PHARMACY_VISIT_visit":"بدء زيارة لصيدلية المستشفى",
   "Start_LAB_VISIT_visit":"بدء زيارة لمخبر المستشفى",
   "Start_IPD_visit":"بدء زيارة لأقسام الاستشفاء",
-  "Start_Special_OPD_visit":"بدء زيارة لقسم العيادات الخارجية الخاصة"
-
+  "Start_Special_OPD_visit":"بدء زيارة لقسم العيادات الخارجية الخاصة",
+  "HOSPITAL_RGISTRATION_DATE":"تاريخ التسجيل",
+  "HOSPITAL_RGISTRATION_FULL_NAME":"الاسم الكامل",
+  "HOSPITAL_RGISTRATION_AGE":"عمر",
+  "HOSPITAL_RGISTRATION_GENDER":"جنس تذكير أو تأنيث",
+  "HOSPITAL_RGISTRATION_VILLAGE":"قرية",
+  "HOSPITAL_RGISTRATION_NAME":"مستشفى تشرين الجامعي",
+  "REGISTRATION_CAUTION_KEY":"حيطة",
+  "REGISTRATION_NOTICE_KEY":"يلاحظ"
        
 }
