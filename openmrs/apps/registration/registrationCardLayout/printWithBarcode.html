@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="/bahmni_config/openmrs/apps/registration/registrationCardLayout/css/print.css"/>
 <link rel="stylesheet" href="../styles/registrationPrint.css" media="print" ng-if="!userLanguageDirRtl"/>
 <link rel="stylesheet" href="../styles/registrationPrint-rtl.css" media="print" ng-if="userLanguageDirRtl"/>
-<table border="1" cellpadding="0" cellspacing="1" class="">
+<table border="1" cellpadding="0" cellspacing="1" class="registrationCard-print-table">
     <tbody>
     <tr>
         <td class="print-table-left" valign="top">
@@ -37,7 +37,7 @@
                     </td>
                     <td class="registrationCard-details-seperator"> :  </td>
                     <td>
-                        <span class="hindi-text">{{patient.fullNameLocal()}}</span>
+                        <span class="hindi-text" style="font-size: 12px;">{{patient.fullNameLocal()}}</span>
                     </td>
                 </tr>
                 <tr>
