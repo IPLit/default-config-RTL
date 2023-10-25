@@ -12,18 +12,6 @@
         "order": 1,
         "requiredPrivilege": "app:clinical"
     },
-    "bahmniClinicalPatientsSearchAllPatients": {
-        "id": "bahmni.clinical.patients.search.allPatients",
-        "extensionPointId": "org.bahmni.patient.search",
-        "type": "config",
-        "extensionParams": {
-            "translationKey": "MODULE_LABEL_ALL_KEY",
-            "forwardUrl": "#/programs/patient/{{patientUuid}}/consultationContext"
-        },
-        "label": "All",
-        "order": 2,
-        "requiredPrivilege": "app:clinical"
-    },
     "bahmniClinicalConceptSetGroupObservationsHistory": {
         "id": "bahmni.clinical.conceptSetGroup.observations.history",
         "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
