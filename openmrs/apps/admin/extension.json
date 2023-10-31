@@ -3,9 +3,9 @@
         "id": "bahmni.admin.csv",
         "extensionPointId": "org.bahmni.admin.dashboard",
         "type": "link",
-        "translationKey": "CSV Upload",
         "extensionParams": {
         },
+        "translationKey": "CSV Upload",
         "url": "#/csv",
         "icon": "fa-upload",
         "order": 1,
@@ -14,10 +14,10 @@
     "csvExport":{
         "id": "bahmni.admin.csvExport",
         "extensionPointId": "org.bahmni.admin.dashboard",
-        "translationKey": "CSV Export",
         "type": "link",
         "extensionParams": {
         },
+        "translationKey": "CSV Export",
         "url": "#/csvExport",
         "icon": "fa-download",
         "order": 1,
@@ -26,10 +26,10 @@
     "auditLog":{
         "id": "bahmni.admin.auditLog",
         "extensionPointId": "org.bahmni.admin.dashboard",
-        "translationKey": "Audit Log",
         "type": "link",
         "extensionParams": {
         },
+        "translationKey": "Audit Log",
         "url": "#/auditLog",
         "icon": "fa-eye",
         "order": 1,
@@ -38,10 +38,10 @@
     "orderSet":{
         "id": "bahmni.admin.orderSet",
         "extensionPointId": "org.bahmni.admin.dashboard",
-        "translationKey": "Order Set",
         "type": "link",
         "extensionParams": {
         },
+        "translationKey": "Order Set",
         "url": "#/ordersetdashboard",
         "icon": "fa-upload",
         "order": 1,
@@ -50,10 +50,10 @@
     "beds":{
         "id": "bahmni.admin.adt",
         "extensionPointId": "org.bahmni.admin.dashboard",
-        "translationKey": "Beds",
         "type": "link",
         "extensionParams": {
         },
+        "translationKey": "Beds",
         "url": "/openmrs/owa/bedmanagement/admissionLocations.html",
         "icon": "icon-bahmni-inpatient",
         "order": 1,
