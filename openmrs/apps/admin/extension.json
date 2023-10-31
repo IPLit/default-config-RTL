@@ -6,7 +6,6 @@
         "translationKey": "CSV Upload",
         "extensionParams": {
         },
-        "label": "CSV Upload",
         "url": "#/csv",
         "icon": "fa-upload",
         "order": 1,
@@ -19,7 +18,6 @@
         "type": "link",
         "extensionParams": {
         },
-        "label": "CSV Export",
         "url": "#/csvExport",
         "icon": "fa-download",
         "order": 1,
@@ -32,7 +30,6 @@
         "type": "link",
         "extensionParams": {
         },
-        "label": "Audit Log",
         "url": "#/auditLog",
         "icon": "fa-eye",
         "order": 1,
@@ -45,7 +42,6 @@
         "type": "link",
         "extensionParams": {
         },
-        "label": "Order Set",
         "url": "#/ordersetdashboard",
         "icon": "fa-upload",
         "order": 1,
@@ -58,7 +54,6 @@
         "type": "link",
         "extensionParams": {
         },
-        "label": "Beds",
         "url": "/openmrs/owa/bedmanagement/admissionLocations.html",
         "icon": "icon-bahmni-inpatient",
         "order": 1,
