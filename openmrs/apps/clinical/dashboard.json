@@ -104,6 +104,16 @@
                     "numberOfVisits":4
                 }
             },
+            "pacs":{  
+                "orderType":"Radiology Order",
+                "type":"pacsOrders",
+                "translationKey":"DASHBOARD_TITLE_PACS_KEY",
+                "displayOrder":8,
+                "dashboardConfig":{  
+                    "pacsImageUrl":"/oviyam2/oviyam?patientID={{patientID}}&accessionNumber={{orderNumber}}",
+                    "numberOfVisits":4
+                }
+            },
             "bacteriologyResults":{  
                 "translationKey":"DASHBOARD_TITLE_BACTERIOLOGY_RESULTS_KEY",
                 "type":"bacteriologyResultsControl",
