@@ -238,7 +238,6 @@
                         "groupBy":"encounters",
                         "obsConcepts":[  
                             "Weight",
-                            "Pulse Data",
                             "Pulse",
                             "Pulse Abnormal",
                             "Blood Pressure",
@@ -251,7 +250,6 @@
                             "Posture",
                             "Sitting",
                             "Supine",
-                            "Temperature Data",
                             "Temperature",
                             "Temperature Abnormal",
                             "RR Data",
