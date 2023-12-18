@@ -181,8 +181,12 @@
                 "dashboardConfig":{  
                     "showDetailsButton":true,
                     "conceptNames":[  
-                        "Pulse",
-                        "Blood Pressure",
+                         "Pulse",
+                        "Systolic Data",
+                        "Systolic Abnormal",
+                        "Diastolic Data",
+                        "Diastolic Abnormal",
+                        "Posture",
                         "Temperature",
                         "RR",
                         "SPO2"
