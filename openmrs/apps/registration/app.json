@@ -50,8 +50,7 @@
                 }
             },
             "addressHierarchy": {
-                "showAddressFieldsTopDown": true,
-                "strictAutocompleteFromLevel": "cityVillage"
+                "showAddressFieldsTopDown": false
             },
             "relationshipTypeMap": {
                 "Doctor":"provider",
